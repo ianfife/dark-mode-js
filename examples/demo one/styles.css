@@ -1,0 +1,157 @@
+html, body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#content-wrap {
+    flex: 1;
+    transition: background-color 0.25s ease-in-out;
+}
+
+#intro {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.25s ease-in-out;
+}
+
+#picture {
+    padding-right: 20px;
+}
+
+#picture img {
+    border-radius: 50%;
+}
+
+#bio {
+    font-size: 30px;
+}
+
+#name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#work {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+hr {
+    max-width: 500px;
+    color: #dadada;
+}
+
+#icons i {
+    text-decoration: none;
+    color: black;
+    transition: color 0.25s ease-in-out;
+}
+
+#portfolio {
+    margin-top: 40px;
+}
+
+.list-item {
+    border-radius: 0px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    color: white;
+    padding: 0 10px;
+}
+
+#display-image {
+    padding: 0 20px;
+}
+
+#display-info {
+    padding: 15px 0;
+}
+
+#display-name h1 {
+    font-size: 30px;
+    margin: 0
+}
+
+#display-langs {
+    padding: 10px 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#display-description a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#display-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#display-links i {
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#display-version {
+    padding-right: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: gray;
+    transition: background-color 0.25s ease-in-out;
+}
+
+#footer-text {
+    margin: 0 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+#footer-text:hover {
+    color: #a1a1a1;
+    transition: color 0.15s ease-in-out;
+}
+
+#footer button {
+    color: gray;
+    padding: 0;
+    margin: 0 10px;
+    border: none;
+    background: none;
+}
+
+#footer button:hover, #footer button:hover {
+    color: #a1a1a1;
+    transition: color 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1150px) {
+    .list-item {
+        width: 90%;
+    }
+
+    hr {
+        max-width: 200px;
+    }
+}
