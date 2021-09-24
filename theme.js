@@ -36,13 +36,13 @@ function setDarkMode(backgrounds = [], text = [], icons = []) {
     }
     //Sets all text elements to a white color
     for (var i = 0; i < text.length; i++) {
-        document.getElementById(text[i]).style.color = lightText;
+        document.getElementById(text[i]).style.color = darkText;
     }
     //Sets all icons (must have "i" tag) to a white color
     for (var i = 0; i < icons.length; i++) {
         var elements = document.getElementById(icons).getElementsByTagName("i"), i, len;
         for (i = 0, len = elements.length; i < len; i++) {
-            elements[i].style.color = lightText;
+            elements[i].style.color = darkText;
         }
     }
     //Your dark/light mode buttons should have the id "footer-button-light" and "footer-button-dark" respectively
