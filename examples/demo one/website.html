@@ -34,7 +34,7 @@
 
               <div id="display-footer">
                 <div id="display-links">
-                  <a target="_blank" rel="noreferrer" href="https://www.w3schools.com/"><i class="fas fa-link"></i></a>
+                  <a id="display-link" target="_blank" rel="noreferrer" href="https://www.w3schools.com/"><i class="fas fa-link"></i></a>
                 </div>
 
                 <div id="display-version">
@@ -49,18 +49,14 @@
       <footer id="footer">
         <a id="footer-text" href="mailto:mailMe@email.com">Contacts example</a>
         |
-        <a id="footer-text" href="/works">Works</a>
-        |
-        <a id="footer-text" href="/blog">Blog</a>
-        |
-        <button onclick="setDarkMode(['content-wrap', 'footer'], ['icons'])" id="footer-button-dark" style="display: block"><i class="fas fa-moon"></i></button>
-        <button onclick="setLightMode(['content-wrap', 'footer'], ['icons'])" id="footer-button-light" style="display: none"><i class="far fa-moon"></i></button>
+        <button onclick="setDarkMode(['content-wrap', 'footer'], ['display-info'], ['display-link'])" id="footer-button-dark" style="display: block"><i class="fas fa-moon"></i></button>
+        <button onclick="setLightMode(['content-wrap', 'footer'], ['display-info'], ['display-link'])" id="footer-button-light" style="display: none"><i class="far fa-moon"></i></button>
       </footer>
 
-<!Note that you will need to change the path of the theme.js file when using this example in your projects!!>
+<!--Note that you will need to change the path of the theme.js file when using this example in your projects!!-->
       <script src="../../theme.js"></script>
       <script>
-        init(['content-wrap', 'footer'], ['icons'])
+        init(['content-wrap', 'footer'], ['display-info'], ['display-link'])
       </script>
     </body>
 </html>
