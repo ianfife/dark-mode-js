@@ -1,6 +1,6 @@
 var theme = window.localStorage.getItem('theme');
 
-//Set these to the color you want your backgrounds/text/icons to be. Must be supported by HTML
+//Set these to the color you want your backgrounds/text/icons to be. Must be supported by HTML (hex, presets, rgb, etc)
 var lightBackground = "white";
 var lightText = "black";
 var darkBackground = "black";
@@ -22,9 +22,9 @@ function setLightMode(backgrounds = [], text = [], icons = []) {
             elements[i].style.color = lightText;
         }
     }
-    //Your dark/light mode buttons should have the id "footer-button-light" and "footer-button-dark" respectively
-    document.getElementById("footer-button-light").style.display = "none";
-    document.getElementById("footer-button-dark").style.display = "block";
+    //Your dark/light mode buttons should have the id "button-light" and "button-dark" respectively
+    document.getElementById("button-light").style.display = "none";
+    document.getElementById("button-dark").style.display = "block";
     //Saves the theme selection to local storage
     window.localStorage.setItem('theme', 'light');
 }
@@ -45,9 +45,9 @@ function setDarkMode(backgrounds = [], text = [], icons = []) {
             elements[i].style.color = darkText;
         }
     }
-    //Your dark/light mode buttons should have the id "footer-button-light" and "footer-button-dark" respectively
-    document.getElementById("footer-button-light").style.display = "block";
-    document.getElementById("footer-button-dark").style.display = "none";
+    //Your dark/light mode buttons should have the id "button-light" and "button-dark" respectively
+    document.getElementById("button-light").style.display = "block";
+    document.getElementById("button-dark").style.display = "none";
     //Saves the theme selection to local storage
     window.localStorage.setItem('theme', 'dark');
 }

@@ -5,15 +5,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Demo Website demonstrating capabilities of theme.js">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
   </head>
 
     <body>
       <div id="content-wrap">
-
-        <hr>
-
         <div id="display-list">
           <div class="list-item" style="background-color: #007aff;">
             <div id="display-image">
@@ -23,11 +21,9 @@
               <div id="display-name">
                 <h1>Demo Item #1</h1>
               </div>
-
               <div id="display-langs">
                 Specifications
               </div>
-
               <div id="display-description">
                 A list item made to demonstrate capabilities of theme.js
               </div>
@@ -36,7 +32,6 @@
                 <div id="display-links">
                   <a id="display-link" target="_blank" rel="noreferrer" href="https://www.w3schools.com/"><i class="fas fa-link"></i></a>
                 </div>
-
                 <div id="display-version">
                   v1.2.0
                 </div>
@@ -47,13 +42,13 @@
       </div>
 
       <footer id="footer">
-        <a id="footer-text" href="mailto:mailMe@email.com">Contacts example</a>
+        <a id="footer-text" href="mailto:mailMe@email.com">Contact Example</a>
         |
-        <button onclick="setDarkMode(['content-wrap', 'footer'], ['display-info'], ['display-link'])" id="footer-button-dark" style="display: block"><i class="fas fa-moon"></i></button>
-        <button onclick="setLightMode(['content-wrap', 'footer'], ['display-info'], ['display-link'])" id="footer-button-light" style="display: none"><i class="far fa-moon"></i></button>
+        <button onclick="setDarkMode(['content-wrap', 'footer'], ['display-info'], ['display-link'])" id="button-dark"><i class="fas fa-moon"></i></button>
+        <button onclick="setLightMode(['content-wrap', 'footer'], ['display-info'], ['display-link'])" id="button-light"><i class="far fa-moon"></i></button>
       </footer>
 
-<!--Note that you will need to change the path of the theme.js file when using this example in your projects!!-->
+<!-- Note that you will need to change the path of the theme.js file when using this example in your projects!! -->
       <script src="../../theme.js"></script>
       <script>
         init(['content-wrap', 'footer'], ['display-info'], ['display-link'])

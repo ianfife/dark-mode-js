@@ -11,52 +11,8 @@ body {
 
 #content-wrap {
     flex: 1;
+    /*You may want to use this transition on anything that changes color/background-color in order to have a smooth transition*/
     transition: background-color 0.25s ease-in-out;
-}
-
-#intro {
-    margin: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: color 0.25s ease-in-out;
-}
-
-#picture {
-    padding-right: 20px;
-}
-
-#picture img {
-    border-radius: 50%;
-}
-
-#bio {
-    font-size: 30px;
-}
-
-#name {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-#work {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-hr {
-    max-width: 500px;
-    color: #dadada;
-}
-
-#icons i {
-    text-decoration: none;
-    color: black;
-    transition: color 0.25s ease-in-out;
-}
-
-#portfolio {
-    margin-top: 40px;
 }
 
 .list-item {
@@ -151,9 +107,5 @@ footer {
 @media only screen and (max-width: 1150px) {
     .list-item {
         width: 90%;
-    }
-
-    hr {
-        max-width: 200px;
     }
 }
